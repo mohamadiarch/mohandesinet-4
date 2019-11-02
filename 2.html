@@ -1,0 +1,83 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #bigdiv1{
+            margin-left:15%;
+            margin-top: 7%;
+            position: absolute;
+        }
+        #bigdiv2{
+            position: absolute;
+            margin-left: 50%;
+            margin-top: 25%;
+
+        }
+        body{
+            position: relative;
+        }
+        .key{
+            background-color: #eee000;
+            font-size: 500%;
+            padding: 20px;
+            margin-top:100px ;
+            margin-left: 10px;
+        }
+        .break{
+            margin-top: 50px;;
+        }
+        .operator{
+            background-color: #00d2ee;
+            font-size: 300%;
+            padding: 15px;
+        }
+        #tv{
+            position: absolute;
+            font-size: 40px;
+            margin-left: 50%;
+            margin-top: 6%;
+            background-color: rgb(167, 152, 177);
+            width: 400px;
+            height: 130px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="bigdiv1">
+        <span id="d1" class="key inline" data-number>1</span>
+        <span id="d2" class="key inline" data-number>2</span>
+        <span id="d3" class="key endline" data-number>3</span>
+        <br> <div class="break"></div>
+        <span id="d4" class="key inline" data-number>4</span>
+        <span id="d5" class="key inline" data-number>5</span>
+        <span id="d6" class="key endline" data-number>6</span>
+        <br><div class="break"></div>
+        <span id="d7" class="key inline" data-number>7</span>
+        <span id="d8" class="key inline" data-number>8</span>
+        <span id="d9" class="key endline" data-number>9</span>
+        <br><div class="break"></div>
+        <span id="d0" class="key inline" data-number>0</span>
+    </div>
+
+    <div id="tv">
+            <div class="previous-operand" data-previous-operand></div>
+            <div class="current-operand" data-current-operand></div>
+    </div>
+
+    <div id="bigdiv2">
+        <span id="zarb" class="operator" data-operation>*</span>
+        <span id="taghsim" class="operator" data-operation>/</span>
+        <span id="jam" class="operator" data-operation>+</span>
+        <span id="menha" class="operator"data-operation>-</span>
+        <span id="mosavi" class="operator" data-equals>=</span>
+        <span id="ac" class="operator" data-all-clear>AC</span>
+        
+    </div>
+    <script src="33.js"></script>
+    
+</body>
+</html>
